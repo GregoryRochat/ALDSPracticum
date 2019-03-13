@@ -1,4 +1,25 @@
 def nex_las_seq(numlist):
+    """
+    Function that scans a list of numbers and returns a list of the amount of numbers and corresponding numbers in
+    sequence. It does this by looping through the list looking at the current number and following number in the list,
+    toggling firstnumber to determine if it is on a new number and keeping track how many of that number have been in
+    that sequence in numbercount. If a sequence is broken the current number and its count are appended to a new list
+    and the values reset. Parameter is asserted to be a non empty list containing integers, throwing an AssertionError
+    otherwise.
+
+    Parameters : numlist
+    ------
+
+    numlist : list of int
+    Contains a sequence of numbers.
+
+    Return
+    ------
+
+    seqlist : list of int
+    Holds the tallied numbers sequenced from numlist.
+
+    """
     assert type(numlist) is list and len(numlist) != 0
     seqlist = []
     firstnumber = True
@@ -30,7 +51,13 @@ def nex_las_seq(numlist):
     return seqlist
 
 
-def testnext_las_seq():
+def testnex_las_seq():
+    """
+    Function that tests the nex_las_seq() function, testing different testlists with corresponding validationlists and
+    checking if erronous parameters are handled correctly, printing all test results.
+
+
+    """
     testlist = [[3, 3, 4, 1, 1, 6, 6, 6, 1], [1],  [2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5], [0, 38, 3, 3, 0]]
     validationlist = [[2, 3, 1, 4, 2, 1, 3, 6, 1, 1] , [1, 1], [2, 2, 3, 3, 4, 4, 5, 5], [1, 0, 1, 38, 2, 3, 1, 0]]
     incorrectlist = [[], ["a", "b", "c"], [1, 2, "test"], 88]
@@ -48,6 +75,6 @@ def testnext_las_seq():
         except AssertionError:
             print("Wrong parameter input for las_nex_seq function! las_nex_seq function working correctly!")
 
-testnext_las_seq()
 
+testnex_las_seq()
 

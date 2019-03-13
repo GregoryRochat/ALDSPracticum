@@ -1,4 +1,19 @@
 def getNumbers(s):
+    """
+    Function that retrieves all the numbers from a string passed into it and returns those as a list.
+    It throws an AssertionError for paramaters that aren't strings.
+
+    Parameters: s
+    ----------
+    s : string
+
+    Return: numberlist
+    ------
+    numberlist : list of integers
+    None :
+
+    If numbers are found a numberlist is returned, else None is returned.
+    """
     assert type(s) == str
     numberlist = []
     number = 0
@@ -18,6 +33,11 @@ def getNumbers(s):
 
 
 def testgetNumbers():
+    """
+    Function that tests the getNumbers() function. It tests the passing of incorrect parameters, checking for
+    AssertionErrors being thrown, as well as passing strings with and without numbers, printing all test results.
+
+    """
     test1 = 'een123zin45 6met-632meerdere+7777getallen'
     test2 = "eenzinzonder getallen---erin"
     test3 = 89

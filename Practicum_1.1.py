@@ -1,5 +1,20 @@
 def mymax(a):
-    assert len(a) != 0
+    """
+    Function that determines the highest number in a list and returns that number only accepts lists
+    of numbers and throws an AssertionError for incorrect paramater types, incorrect types in list and empty lists
+
+    Parameters: a
+    ----------
+    a : list
+    list of numbers
+
+    Return: maxnum
+    ------
+    maxnum : integer or float
+
+    highest number of the list passed into the function
+    """
+    assert len(a) != 0 and type(a) == list
     maxnum = a[0]
     for element in a:
         assert type(element) is int or type(element) is float
@@ -9,12 +24,19 @@ def mymax(a):
 
 
 def mymaxtest():
-    lst1 = [0, 1, 2, 3, 4, 5, 6, 99, 3, 4]
-    lst2 = []
-    lst3 = ["test", 3]
-    lst4 = [13]
-    lst5 = [88, 1, 2]
-    testlists = [lst1, lst2, lst3, lst4, lst5]
+    """
+    Function that tests the mymax function with the builtin Python max() function as well as the correct handling
+    of incorrect paramaters being passed into the function, printing all the test results.
+
+    """
+    test1 = [0, 1, 2, 3, 4, 5, 6, 99, 3, 4]
+    test2 = []
+    test3 = ["test", 3]
+    test4 = [13]
+    test5 = [88, 1, 2]
+    test6 = 88
+
+    testlists = [test1, test2, test3, test4, test5, test6]
     for test in testlists:
         print("Test result: ", end="")
         try:
@@ -24,7 +46,7 @@ def mymaxtest():
             else:
                 print("Max number not found! Function working incorrectly")
         except AssertionError:
-            print("Invalid entry for mymax function")
+            print("Invalid paramater passed into mymax function")
 
 
 mymaxtest()
