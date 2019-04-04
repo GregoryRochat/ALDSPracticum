@@ -7,17 +7,17 @@ def nex_las_seq(numlist):
     and the values reset. Parameter is asserted to be a non empty list containing integers, throwing an AssertionError
     otherwise.
 
-    Parameters : numlist
+    Parameters
     ------
 
     numlist : list of int
-    Contains a sequence of numbers.
+        Contains a sequence of numbers.
 
     Return
     ------
 
     seqlist : list of int
-    Holds the tallied numbers sequenced from numlist.
+        Holds the tallied numbers sequenced from numlist.
 
     """
     assert type(numlist) is list and len(numlist) != 0

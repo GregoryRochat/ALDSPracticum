@@ -12,7 +12,7 @@ def runbirthdayproblem():
     ------
 
     numofdoubles : int
-    return an int amount of doubles found
+        return an int amount of doubles found
 
     """
     listoflists = []
@@ -38,11 +38,11 @@ def testrunbirthdayproblem(n=100):
     Function that tests the runbirthdayproblem() function by running it n times and take the average of those runs and
     printing that result, which should be close to 50% per the birthday problem analysis
 
-    Parameters: n=100
+    Parameters
     ------
 
     n : int
-    n the int amount of tests to run
+        n the int amount of tests to run
 
     """
     allresults = 0

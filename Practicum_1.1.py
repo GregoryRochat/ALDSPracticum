@@ -3,17 +3,17 @@ def mymax(a):
     Function that determines the highest number in a list and returns that number only accepts lists
     of numbers and throws an AssertionError for incorrect paramater types, incorrect types in list and empty lists
 
-    Parameters: a
+    Parameters
     ----------
     a : list
-    list of numbers
+        list of numbers
 
-    Return: maxnum
+    Return
     ------
     maxnum : integer or float
-
-    highest number of the list passed into the function
+        highest number of the list passed into the function
     """
+
     assert len(a) != 0 and type(a) == list
     maxnum = a[0]
     for element in a:

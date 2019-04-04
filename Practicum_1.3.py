@@ -12,13 +12,12 @@ def findprimes(primerange=1000):
     Parameters: primerange
     ----------
     primerange : int
-    Integer representing upper search range for primes.
+        Integer representing upper search range for primes.
 
     Return
     ------
     primelist : list of integers
-
-    list of all the primes found.
+        list of all the primes found.
     """
     assert type(primerange) is int
     primelist = []
@@ -48,13 +47,12 @@ def isprime(n):
     Parameters: n
     ----------
     n : int
-    Integer tested if it is a prime.
+        Integer tested if it is a prime.
 
     Return
     ------
     primelist : list of integers
-
-    list of all the primes found.
+        list of all the primes found.
 
     """
     assert type(n) is int
@@ -70,10 +68,10 @@ def testfindprimes(primerange):
     tested with a validation set of all primes up to 1000 while an isprime() function is used to check all the primes
     generated in the second non-standard test for their validity.
 
-    Parameters: primerange
+    Parameters:
     ----------
     primerange : int
-    Integer representing upper search range for primes passed into the findprimes() function.
+        Integer representing upper search range for primes passed into the findprimes() function.
 
     """
 

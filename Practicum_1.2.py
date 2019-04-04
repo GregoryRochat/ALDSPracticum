@@ -3,14 +3,18 @@ def getNumbers(s):
     Function that retrieves all the numbers from a string passed into it and returns those as a list.
     It throws an AssertionError for paramaters that aren't strings.
 
-    Parameters: s
+    Parameters
     ----------
     s : string
+        string that will be vetted for numbers
 
-    Return: numberlist
+    Return
     ------
     numberlist : list of integers
-    None :
+        list of all the integers found in string "s"
+
+    None : None
+        returned if no integers were found in string "s"
 
     If numbers are found a numberlist is returned, else None is returned.
     """
